@@ -1,0 +1,30 @@
+@import "../../_index.scss";
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @media screen and (min-width: $medium) {
+        flex-direction: row;
+    }
+
+    article {
+        margin: 20px 0px;
+        border: 1px solid red;
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+        background-color: $primary-color;
+
+        section {
+            .blog-image {
+                width: clamp(300px, 40vw, 400px);
+            }
+        }
+    }
+}
+

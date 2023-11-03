@@ -1,0 +1,62 @@
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+@import "./utils";
+
+header {
+    @include background-settings();
+
+    .logo-name {
+        @media screen and (max-width: 600px) {
+            margin-bottom: 48px;
+        }
+       
+
+        img {
+            width: 100px;
+        }
+
+        .name {
+            font-size: 32px;
+
+            .coder-text {
+                color: #45a7c5;
+            }
+    
+            .academy-text {
+                color: #1c3c5c;
+            }
+        }
+    }
+
+
+    #nav-items {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+
+        a {
+            text-decoration: none;
+            color: rgb(21, 21, 175)
+        }
+    }
+}
+
+// Media query for Header
+@media screen and (min-width: $medium) {
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .logo-name {
+
+            .name {
+                margin-bottom: 0;
+            }
+        }
+
+        #nav-items {
+            width: 50%;
+        }
+    }
+}

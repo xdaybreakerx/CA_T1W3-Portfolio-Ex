@@ -1,0 +1,22 @@
+@import "../../_index.scss";
+
+main {
+    section {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+
+        .main-image {
+            img {
+                height: 300px;
+                border-radius: 64px;
+                padding: 16px;
+            }
+        }
+
+        .details {
+            display: flex;
+            padding: 16px;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+header {
+  background-color: #cdb4db;
+  padding: 16px;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  header .logo-name {
+    margin-bottom: 48px;
+  }
+}
+header .logo-name img {
+  width: 100px;
+}
+header .logo-name .name {
+  font-size: 32px;
+}
+header .logo-name .name .coder-text {
+  color: #45a7c5;
+}
+header .logo-name .name .academy-text {
+  color: #1c3c5c;
+}
+header #nav-items {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+header #nav-items a {
+  text-decoration: none;
+  color: rgb(21, 21, 175);
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  header .logo-name .name {
+    margin-bottom: 0;
+  }
+  header #nav-items {
+    width: 50%;
+  }
+}
+footer {
+  background-color: #cdb4db;
+  padding: 16px;
+  text-align: center;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 32px;
+}
+footer .social-media a i {
+  font-size: 24px;
+  color: black;
+}
+footer .info {
+  color: black;
+}
+
+@media screen and (min-width: 600px) {
+  footer .social-media {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+body {
+  margin: 0;
+  background-color: #ffafcc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+@media screen and (min-width: 600px) {
+  main {
+    flex-direction: row;
+  }
+}
+main article {
+  margin: 20px 0px;
+  border: 1px solid red;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #cdb4db;
+}
+main article section .blog-image {
+  width: clamp(300px, 40vw, 400px);
+}/*# sourceMappingURL=services.css.map */

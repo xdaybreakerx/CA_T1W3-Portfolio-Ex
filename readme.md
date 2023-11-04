@@ -6,6 +6,8 @@ This is currently under development. We will continue to add the features discus
 
 You will notice that I am not a designer ／人◕ __ ◕人＼
 
+- This website is hosted on Netlify - you can find it [here.](https://ca-portfolio-demo-xs.netlify.app/)
+
 ## Components: 
 
 ### Header: 
